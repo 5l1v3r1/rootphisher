@@ -16,7 +16,7 @@ Server
     
 # How can I create a DB?
    
-     Here I wsill show you all steps to create the server
+     Here I will show you all steps to create the server
       
      (kali linux or Parrot OS)
    
