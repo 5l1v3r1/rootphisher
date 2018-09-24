@@ -15,9 +15,13 @@ Server
     Upload the server files to the HTTP Server. Create a database (Eg.: rootphisher). Edit the mysql server parameters in the file db.inc.php. Then import the rootphisher.sql file (Server/db/rootphisher.sql) in the database via MySQL or PHPMyAdmin. Now the server is ready. Now you can login with the default credentials (admin:admin).
     
 # How can I create a DB?
-   Here I wsill show you all steps to create the server
-   (kali linux or Parrot OS)
+   
+     Here I wsill show you all steps to create the server
+      
+     (kali linux or Parrot OS)
+   
        start apache2 service (service apache2 start)
+              
        Then move files inside server folder to /var/www/html
        start Mysql service (service mysql start)
        Create database ( open mysql shell with "mysql -u root")
