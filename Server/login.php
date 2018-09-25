@@ -10,7 +10,32 @@ if(isset($sess)) {
     header("Location: index.php");
 } else {
 
-    echo '<html><head><title>Login</title></head><body bgcolor="black"><center><h1 style="color: red;">RootPhisher</h1><h1 style="color: lime;">Login</h1><form action="#" method="POST"><input style="color: lime; background: black;" type="text" placeholder="Username" name="user"><br><br><input style="color: lime; background: black;" type="password" placeholder="Password" name="pass"><br><br><input style="color: lime; background: black;" type="submit" value="Login" name="login"></center></body></html>';
+    echo '<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body >
+<form action="#" method="POST" style="max-width:500px;margin:auto">
+  <h2>RootPhisher</h2>
+  
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="user">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="pass">
+  </div>
+
+  <button type="submit" class="btn">Log In</button>
+</form>
+
+</body>
+</html>';
 
     $login = @($_POST['login']);
     if(isset($login)) {
