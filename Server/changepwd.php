@@ -8,7 +8,7 @@ $sess = $_SESSION['username'];
 
 if(isset($sess)) {
 
-   echo '<html><head><title>Change Password</title></head><body bgcolor="black"><center><h1 style="color: lime;">Change Password</h1><form action="#" method="POST"><input style="color: lime; background: black;" type="password" placeholder="Old Password" name="pass"><br><br><input style="color: lime; background: black;" type="password" placeholder="New Password" name="passn"><br><br><input style="color: lime; background: black;" type="password" placeholder="Repeat Password" name="pass2"><br><br><input style="color: lime; background: black;" type="submit" value="Change" name="change"></center></body></html>';
+   echo '<html><head><title>Change Password</title><link rel="stylesheet" type="text/css" href="mystyle.css"/></head><body bgcolor="black"><center><h1 style="color: lime;">Change Password</h1><form action="#" method="POST"><input style="color: lime; background: black;" type="password" placeholder="Old Password" name="pass"><br><br><input style="color: lime; background: black;" type="password" placeholder="New Password" name="passn"><br><br><input style="color: lime; background: black;" type="password" placeholder="Repeat Password" name="pass2"><br><br><input style="color: lime; background: black;" type="submit" value="Change" name="change"></center></body></html>';
    $change = @($_POST['change']);
    if(isset($change)) {
 
