@@ -7,7 +7,7 @@ include('db.inc.php');
 $sess = $_SESSION['username'];
 
 if(isset($sess)) {
-    echo '<html><head><title>RootPhisher</title></head><body bgcolor="black"><center><h1 style="color: lime;">Rootphisher Control Panel</h1><h2 style="color: red;">Available codes</h2>';
+    echo '<html><head><title>RootPhisher</title><link rel="stylesheet" type="text/css" href="mystyle.css"/></head><body bgcolor="black"><center><h1 style="color: lime;">Rootphisher Control Panel</h1><h2 style="color: red;">Available codes</h2>';
     $var2 = "";
     $q4 = "SELECT * FROM data";
     $a4 = mysqli_query($link, $q4);
