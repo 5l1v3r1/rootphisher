@@ -25,7 +25,7 @@ Server
        Then move files inside server folder to /var/www/html
        start Mysql service (service mysql start)
        Create database ( open mysql shell with "mysql -u root")
-       import rootphisher.sql, type "mysql -u root -p rootphisher <rootphisher.sql"
+       import rootphisher.sql, type "mysql -u root -p rootphisher < rootphisher.sql"
    DEMO:
      (LINK TO VIDEO CREATING DB)
            
