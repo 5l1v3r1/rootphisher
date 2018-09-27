@@ -27,7 +27,7 @@ Server
        Create database ( open mysql shell with "mysql -u root")
        import rootphisher.sql, type "mysql -u root -p rootphisher < rootphisher.sql"
    DEMO:
-     <script src="https://asciinema.org/a/ZMf9ihzHaCt7i6OhxCkmOAAK0.js" id="asciicast-ZMf9ihzHaCt7i6OhxCkmOAAK0" async></script>
+     <a href="https://asciinema.org/a/ZMf9ihzHaCt7i6OhxCkmOAAK0" target="_blank"><img src="https://asciinema.org/a/ZMf9ihzHaCt7i6OhxCkmOAAK0.png" /></a>
            
 
 # Client
