@@ -10,9 +10,12 @@ The trick is the replacement of the file su and sudo. Once you have replaced tha
 Server
  First we need:
 
-    Any HTTP Server
+   Any HTTP Server
     MySQL
-    Upload the server files to the HTTP Server. Create a database (Eg.: rootphisher). Edit the mysql server parameters in the file db.inc.php. Then import the rootphisher.sql file (Server/db/rootphisher.sql) in the database via MySQL or PHPMyAdmin. Now the server is ready. Now you can login with the default credentials (admin:admin).
+   
+   Upload the server files to the HTTP Server. Create a database Edit the mysql server parameters in the file db.inc.php.
+   Then import the rootphisher.sql file (Server/db/rootphisher.sql) in the database via MySQL or PHPMyAdmin.
+   Now the server is ready. Now you can login with the default credentials (admin:admin).
     
 # How can I create a DB?
    
