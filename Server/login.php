@@ -31,7 +31,7 @@ if(isset($sess)) {
     <input class="input-field" type="password" placeholder="Password" name="pass">
   </div>
 
-  <button type="submit" class="btn">Log In</button>
+  <button name="login" type="submit" class="btn">Log In</button>
 </form>
 
 </body>
