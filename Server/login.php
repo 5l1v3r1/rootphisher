@@ -53,7 +53,7 @@ if(isset($sess)) {
  
       } else {
  
-         echo '<text style="color: lime;">Incorrect Username or Password.</text>';
+         echo '<text style="color: white;">Incorrect Username or Password.</text>';
  
       }
 
