@@ -8,7 +8,36 @@ $sess = $_SESSION['username'];
 
 if(isset($sess)) {
 
-   echo '<html><head><title>Change Password</title><link rel="stylesheet" type="text/css" href="mystyle.css"/></head><body bgcolor="black"><center><h1 style="color: lime;">Change Password</h1><form action="#" method="POST"><input style="color: lime; background: black;" type="password" placeholder="Old Password" name="pass"><br><br><input style="color: lime; background: black;" type="password" placeholder="New Password" name="passn"><br><br><input style="color: lime; background: black;" type="password" placeholder="Repeat Password" name="pass2"><br><br><input style="color: lime; background: black;" type="submit" value="Change" name="change"></center></body></html>';
+   echo '<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Add icon library -->
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body >
+<form action="#" method="POST" style="max-width:500px;margin:auto">
+  <h2>Change Password</h2>
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Old Password" name="pass">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="New Password" name="passn">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Repeat Password" name="pass2">
+  </div>
+  
+<button name="change" Value="Change" type="submit" class="btn">Log In</button>
+</form>
+</body>
+</html>';
    $change = @($_POST['change']);
    if(isset($change)) {
 
