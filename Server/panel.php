@@ -7,7 +7,7 @@ include('db.inc.php');
 $sess = $_SESSION['username'];
 
 if(isset($sess)) {
-    echo '<html><head><title>RootPhisher</title><link rel="stylesheet" type="text/css" href="mystyle.css"/></head><body bgcolor="black"><center><h1 style="color: lime;">Rootphisher Control Panel</h1><h2 style="color: red;">Available codes</h2>';
+    echo '<html><head><title>RootPhisher</title><link rel="stylesheet" type="text/css" href="mystyle.css"/></head><body><center><h1 style="color: white;">Rootphisher Control Panel</h1><h2 style="color: white;">Available codes</h2>';
     $var2 = "";
     $q4 = "SELECT * FROM data";
     $a4 = mysqli_query($link, $q4);
@@ -26,7 +26,7 @@ if(isset($sess)) {
 } 
    
 echo $var2;
-echo '</table><br><br><h2 style="color: lime;">Account settings</h2><a href="/changepwd.php">Change Password</a><br><br><a href="/logout.php">Logout</a></center></body></html>';
+echo '</table><br><br><a href="/changepwd.php">Change Password</a><br><br><a href="/logout.php">Logout</a></center></body></html>';
 
 } else {
    header("Location: login.php");
