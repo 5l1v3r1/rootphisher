@@ -60,13 +60,13 @@ if(isset($sess)) {
  
          } else {
  
-            echo '<text style="color: lime;">Incorrect Password.</text>';
+            echo '<text style="color: white;">Incorrect Password.</text>';
  
         }
 
     } else {
 
-       echo '<text style="color: lime;">Passwords do not match.</text>';  
+       echo '<text style="color: white;">Passwords do not match.</text>';  
   
     }
 
